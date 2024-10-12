@@ -9,7 +9,7 @@ export default function Header() {
             <input type="text"/>
             <button id = "search" class = "floatl">search</button>
 
-            <h2 class = "floatl">Home</h2>
+            <a href="./Home.js" class = "floatl">Home</a>
         </div>
     );
 }

@@ -1,15 +1,12 @@
-.floatr{
-    float: right;
-}
-
-.floatl{
-    float: left;
-}
-
-.background{
+.background {
     background-color: black;
 }
 
-.skyblue{
+.skyblue {
     color: skyblue;
+}
+
+.floatl {
+    display: block;
+    margin: 5px 0; 
 }
