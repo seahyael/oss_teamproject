@@ -1,5 +1,9 @@
-.float{
+.floatr{
     float: right;
+}
+
+.floatl{
+    float: left;
 }
 
 .background{
