@@ -15,9 +15,15 @@
     font-size: 15px;
     font-weight: bold;
     border-top: 1px solid #f1f3f6;
-    padding: 10px; /* 여백 추가 */
+    padding: 10px;
 }
 
 .nav_items input {
-    margin-right: 5px; /* 버튼과의 간격 조정 */
+    margin-right: 5px; 
 }
+
+.noline{
+    text-decoration: none;
+    padding-right: 20px;
+}
+
