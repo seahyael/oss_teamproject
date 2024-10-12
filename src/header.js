@@ -7,9 +7,9 @@ export default function Header() {
             <h1 class = "floatl">플레이리스트 사이트</h1>
 
             <input type="text"/>
-            <button id = "search">search</button>
+            <button id = "search" class = "floatl">search</button>
 
-            <h2 class = "floatr">Home</h2>
+            <h2 class = "floatl">Home</h2>
         </div>
     );
 }
