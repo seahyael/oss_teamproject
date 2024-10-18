@@ -1,0 +1,17 @@
+.search-container {
+    background-color: #D9DDDC;
+    padding: 1.5rem;
+}
+
+.search-header {
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.search-result {
+    border: 1px solid black;
+}
+
+.search-bar {
+    width: 25rem;
+}

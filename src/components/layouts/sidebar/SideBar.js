@@ -1,12 +1,15 @@
 import "./SideBar.css";
+import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
     <div className="sidebar-container">
       <div className="sidenav">
-        <a href="localhost:3000">Test list item 1</a>
-        <a href="localhost:3000">Test list item 2</a>
-        <a href="localhost:3000">Test list item 3</a>
+        <Link to="/home">Home</Link>
+        <Link to="/search">Search</Link>
+        <a href="localhost:3000">Tutorial</a>
+        <a href="localhost:3000">Contact</a>
+        <a href="localhost:3000">About</a>
       </div>
     </div>
   );

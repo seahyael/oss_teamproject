@@ -1,0 +1,9 @@
+.r-container {
+    background-color: #D9DDDC;
+    padding: 1.5rem;
+}
+
+.r-header {
+    border: 1px solid black;
+    height: 250px;
+}

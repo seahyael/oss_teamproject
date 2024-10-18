@@ -1,4 +1,22 @@
-.content {
+.home-container {
     background-color: #D9DDDC;
     height: 100%;
+    padding: 1.5rem;
+}
+
+.contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-basis: 25%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.home-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
