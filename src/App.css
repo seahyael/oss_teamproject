@@ -1,5 +1,3 @@
-/* nothing */
-
-.App {
-    display: grid;
+* {
+    box-sizing: border-box;
 }

@@ -1,0 +1,30 @@
+.sidebar-container {
+    grid-area: sidebar;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%;
+    background-color: #1F2833;
+    /* Black */
+
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #D9DDDC;
+    display: block;
+    text-align: center;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}

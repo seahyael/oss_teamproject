@@ -1,0 +1,10 @@
+.layout-container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: auto 800px auto;
+    grid-template-areas: 
+        "header header "
+        "sidebar content"
+        "footer footer"
+    ;
+}

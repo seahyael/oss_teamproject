@@ -1,28 +1,29 @@
-.background {
-    background-color: black;
+.header-container {
+    grid-area: header;
 }
 
-.skyblue {
-    color: skyblue;
+.header-color {
+    background-color: #0B0C10;
+    color: #45A29E;
 }
 
-.nav_items {
-    width: 100%;
-    height: 100%;
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     font-size: 15px;
     font-weight: bold;
-    border-top: 1px solid #f1f3f6;
+
     padding: 10px;
 }
 
 .nav_items input {
-    margin-right: 5px; 
+    margin-right: 5px;
 }
 
-.noline{
+.noline {
+    color: inherit;
     text-decoration: none;
     padding-right: 20px;
 }

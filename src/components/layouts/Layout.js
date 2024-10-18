@@ -1,14 +1,21 @@
+// import css file (important)
+import "./Layout.css";
+
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
-import SideBar from "./SideBar";
+
+// import components here
+import Header from "./header/Header";
+import SideBar from "./sidebar/SideBar";
+import Footer from "./footer/Footer";
 
 function Layout() {
   return (
-    <>
+    <div className="layout-container">
       <Header />
-      {/* <SideBar /> */}
+      <SideBar />
       <Outlet />
-    </>
+      <Footer />
+    </div>
   );
 }
 
