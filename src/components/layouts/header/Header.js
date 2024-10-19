@@ -15,14 +15,14 @@ export default function Header() {
         <div className="title-search">
           {/* <input type="text" placeholder="검색" />
           <button id="search">검색</button> */}
-        <div class="input-group">
+        <div className="input-group">
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             placeholder="Enter Playlist"
           />
           <button
-            class="btn btn-outline-secondary"
+            className="btn btn-outline-secondary"
             type="button"
             id="button-addon2"
           >
