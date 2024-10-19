@@ -21,7 +21,7 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #D9DDDC;
+    color: #9bc7ff;
     display: block;
     text-align: left;
 }
@@ -30,12 +30,12 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #D9DDDC;
+    color: #9bc7ff;
     display: block;
     text-align: left;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #62a6ff
 }
