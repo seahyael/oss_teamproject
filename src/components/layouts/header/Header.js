@@ -1,7 +1,7 @@
 import "./Header.css";
 
 // maybe get rid after, but add logo to header
-import logo from "../../../logo.svg";
+import logo from "../../../logo1.jpg";
 
 export default function Header() {
   return (
