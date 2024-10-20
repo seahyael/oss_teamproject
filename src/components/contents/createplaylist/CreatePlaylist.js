@@ -1,3 +1,4 @@
+import '../contents.css';
 import "./CreatePlaylist.css";
 
 // import modules

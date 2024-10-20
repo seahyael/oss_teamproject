@@ -1,10 +1,11 @@
+import '../contents.css';
 import "./Home.css";
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container container">
       <div className="home-title">
         <h1>My Playlists</h1>
         <Link to="/create">Create Playlist</Link>

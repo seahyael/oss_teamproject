@@ -1,3 +1,4 @@
+import '../contents.css';
 import './ViewPlaylist.css';
 
 function ViewPlaylist() {

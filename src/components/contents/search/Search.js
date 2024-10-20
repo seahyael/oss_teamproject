@@ -1,3 +1,4 @@
+import '../contents.css';
 import "./Search.css";
 
 import { useState, useEffect } from "react";

@@ -1,3 +1,4 @@
+import '../contents.css';
 import "./AddToPlaylist.css";
 
 import axios from "axios";

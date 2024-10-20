@@ -1,3 +1,4 @@
+import '../contents.css';
 import "./Contact.css";
 import profile1 from "../../../profile_m.jpg";
 import profile2 from "../../../profile_w.jpg";
@@ -16,7 +17,7 @@ function contact() {
       <div className="contact-item">
         <img src={profile1} className="header-logo" alt="금강산 프로필" />
         <h4>금강산</h4>
-        <h4></h4>
+        <h4>010-2118-3393</h4>
       </div>
     </div>
   );
