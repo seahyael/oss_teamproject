@@ -1,6 +1,7 @@
 import "./Search.css";
 
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 function Search() {
@@ -16,7 +17,7 @@ function Search() {
   // const displayResult = (result) => {};
 
   //! useEffect Hook is called twice, due to React's strict mode
-  //! It will be called just once in actual deployment 
+  //! It will be called just once in actual deployment
 
   // fetch access token, only once
   useEffect(() => {
@@ -76,29 +77,35 @@ function Search() {
       // songData.current = response.data.tracks.items;
       setSongData(response.data.tracks.items);
       //* for debugging
-
-
     };
 
-    if (query)
-      fetchSongData();
+    if (query) fetchSongData();
   }, [query, accessToken]);
 
   const createTableRow = (data) => {
     const imageUrl = data.album.images[2].url;
     return (
       <tr>
-        <td><img src={imageUrl} alt="album-cover" /></td>
+        <td>
+          <img src={imageUrl} alt="album-cover" />
+        </td>
         <td>{data.name}</td>
         <td>{data.artists[0].name}</td>
         <td>{data.album.name}</td>
         <td>{data.popularity} out of 100</td>
         <td>{data.album.release_date}</td>
-        <td><a href={data.external_urls.spotify}>Link</a></td>
+        <td>
+          <a href={data.external_urls.spotify}>Link</a>
+        </td>
+        <td>
+          <Link to='/add' state={{data}}>
+            <button>Add Icon Here</button>
+          </Link>
+        </td>
       </tr>
-    )
-  }
-  
+    );
+  };
+
   return (
     <div className="search-container">
       <div className="search-header">
@@ -127,7 +134,6 @@ function Search() {
 
       <div className="search-result">
         <h3>Search Result</h3>
-        <h5>(Display Search Result here)</h5>
 
         <table className="table table-striped">
           <thead>
@@ -139,10 +145,17 @@ function Search() {
               <th scope="col">Popularity</th>
               <th scope="col">ReleaseDate</th>
               <th scope="col">URL link</th>
+              <th scope="col">Add to ...</th>
             </tr>
           </thead>
           <tbody>
-           {songData ? songData.map((item) => { return createTableRow(item) }):<tr></tr>}  
+            {songData ? (
+              songData.map((item) => {
+                return createTableRow(item);
+              })
+            ) : (
+              <tr></tr>
+            )}
           </tbody>
         </table>
       </div>
