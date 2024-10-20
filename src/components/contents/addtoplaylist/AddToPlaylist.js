@@ -2,11 +2,13 @@ import "./AddToPlaylist.css";
 
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function AddToPlaylist() {
   const location = useLocation();
   const [songInfo, setSongInfo] = useState(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (location.state && location.state.data) {
@@ -15,9 +17,9 @@ function AddToPlaylist() {
   }, [location]);
 
   //* for debugging
-//   console.log("Value of location object: ");
-//   console.log(location);
-//   console.log(location.state.data);
+  //   console.log("Value of location object: ");
+  //   console.log(location);
+  //   console.log(location.state.data);
   //* for debugging
 
   const [playlistData, setPlaylistData] = useState([]);
@@ -66,6 +68,7 @@ function AddToPlaylist() {
     } catch (error) {
       console.error("Error posting data:", error);
     }
+    navigate("/home");
   };
 
   const createTableRow = (data) => {
