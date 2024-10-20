@@ -8,7 +8,7 @@ function SideBar() {
         <Link to="/home">Home</Link>
         <Link to="/search">Search</Link>
         <a href="localhost:3000">Tutorial</a>
-        <a href="localhost:3000">Contact</a>
+        <Link to="/contact">Contact</Link>
         <a href="localhost:3000">About</a>
       </div>
     </div>
