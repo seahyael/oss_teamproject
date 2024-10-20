@@ -99,8 +99,8 @@ function Search() {
           <a href={data.external_urls.spotify}>Link</a>
         </td>
         <td>
-          <Link to='/add' state={{data}}>
-            <button>Add Icon Here</button>
+          <Link className="btn btn-primary" to='/add' state={{data}}>
+            Add!
           </Link>
         </td>
       </tr>

@@ -4,6 +4,14 @@
 }
 
 .r-header {
-    border: 1px solid black;
-    height: 250px;
+
+}
+
+.r-description {
+    font-size: larger;
+    background-color: white;
+}
+
+.r-description div {
+    margin-bottom: 2rem;
 }
