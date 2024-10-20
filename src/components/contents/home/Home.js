@@ -10,7 +10,7 @@ function Home() {
         <h1>My Playlists</h1>
         <Link to="/create">Create Playlist</Link>
       </div>
-      <div className="contents">
+      <div>
         <PlaylistCard />
       </div>
     </div>
