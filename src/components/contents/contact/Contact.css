@@ -1,0 +1,17 @@
+.contact-container {
+    background-color: #D9DDDC;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.item {
+    flex-basis: 25%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.contact-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
