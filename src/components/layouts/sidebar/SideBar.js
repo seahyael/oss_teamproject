@@ -7,7 +7,7 @@ function SideBar() {
       <div className="sidenav">
         <Link to="/home">Home</Link>
         <Link to="/search">Search</Link>
-        <a href="localhost:3000">Tutorial</a>
+        <Link to="./tutorial">Tutorial</Link>
         <Link to="/contact">Contact</Link>
         <a href="localhost:3000">About</a>
       </div>
