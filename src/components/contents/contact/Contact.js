@@ -1,4 +1,4 @@
-import "./contact.css";
+import "./Contact.css";
 import profile1 from "../../../profile_m.jpg";
 import profile2 from "../../../profile_w.jpg";
 
