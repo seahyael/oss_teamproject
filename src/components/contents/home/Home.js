@@ -38,7 +38,7 @@ function PlaylistCard() {
   }, []);
 
   return (
-    <div className="card-container d-flex flex-wrap justify-content-center">
+    <div className="contents">
       {playlists.map((playlist) => (
         <div className="card" style={{ width: "15rem", margin: "10px" }} key={playlist.id}>
           <div style={{ backgroundColor: playlist.color, height: "150px" }}>
