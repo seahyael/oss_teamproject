@@ -4,9 +4,12 @@ import "./CreatePlaylist.css";
 // import modules
 import axios from "axios";
 import { useForm, Controller } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import { SketchPicker } from "react-color";
 
 function CreatePlaylist() {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -40,6 +43,7 @@ function CreatePlaylist() {
       console.error('Error posting data:', error);
     }
 
+    navigate("/home");
   };
 
   //? uncomment when needed
