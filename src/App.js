@@ -10,6 +10,7 @@ import Search from "./components/contents/search/Search";
 import CreatePlaylist from "./components/contents/createplaylist/CreatePlaylist";
 import AddToPlaylist from "./components/contents/addtoplaylist/AddToPlaylist";
 import ViewPlaylist from "./components/contents/viewplaylist/ViewPlaylist";
+import Tutorial from "./components/contents/tutorial/Tutorial";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="add" element={<AddToPlaylist />} />
             <Route path="read" element={<ViewPlaylist />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="tutorial" element={<Tutorial />} />
           </Route>
         </Routes>
       </BrowserRouter>
