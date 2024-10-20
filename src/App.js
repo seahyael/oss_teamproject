@@ -9,13 +9,14 @@ import Search from "./components/contents/search/Search";
 import CreatePlaylist from "./components/contents/createplaylist/CreatePlaylist";
 import ViewPlaylist from "./components/contents/viewplaylist/ViewPlaylist";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/" element={<Layout />}>
             <Route path="home" element={<Home />} />
             <Route path="search" element={<Search />} />
