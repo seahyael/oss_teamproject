@@ -62,7 +62,7 @@ function PlaylistCard() {
             {/* <a href={playlist.url} className="btn btn-primary">
               View Playlist
             </a> */}
-            <Link className="btn btn-primary" to="/read" state={{playlist}}>
+            <Link className="btn btn-primary" to="/read" state={{data:playlist}}>
               View Playlist
             </Link>
           </div>

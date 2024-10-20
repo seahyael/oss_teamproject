@@ -3,6 +3,7 @@ import "./ViewPlaylist.css";
 
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function ViewPlaylist() {
   const location = useLocation();
@@ -26,51 +27,42 @@ function ViewPlaylist() {
   return (
     <div className="r-container">
       <div className="r-header" style={{ backgroundColor: playlistInfo.color }}>
-        <h1>Info of the playlist</h1>
+        <h1>Info of the playlist: {playlistInfo.title}</h1>
       </div>
 
       <div className="r-description">
         <div>
-          <div>
-            <span>Title:</span>
-            <span>transmit</span>
-          </div>
-          <div>
+          <div className="marg-bottom">
             <span>Description:</span>
             <span>
-              Maiores aut officia exercitationem non at accusantium doloremque.
-              Corrupti cum beatae voluptatibus necessitatibus tempora provident
-              laboriosam. Omnis pariatur natus voluptatem pariatur alias earum.
-              Eveniet voluptates amet maiores possimus tempora perspiciatis quod
-              eos. Quisquam laboriosam repellat alias excepturi totam
-              exercitationem fugit. Voluptates accusantium vel culpa culpa
-              aspernatur repellat eum eius dicta.
+              {playlistInfo.description}
             </span>
           </div>
-          <div>
+          <div className="marg-bottom">
             <span>Color:</span>
-            <span>#ad77de</span>
+            <span>{playlistInfo.color}</span>
           </div>
-          <div>
+          <div className="marg-bottom">
             <span>Mood:</span>
-            <span>Niue</span>
+            <span>{playlistInfo.mood}</span>
           </div>
-          <div>
+          <div className="marg-bottom">
             <span>Genre:</span>
-            <span>Non Music</span>
+            <span>{playlistInfo.genre}</span>
           </div>
-          <div>
+          <div className="marg-bottom">
             <span>Favorite:</span>
-            <span>true</span>
+            <span>{playlistInfo.favorite ? "true": "false"}</span>
           </div>
-          <div>
+          <div className="marg-bottom">
             <span>Public:</span>
-            <span>false</span>
+            <span>{playlistInfo.public ? "true": "false"}</span>
           </div>
-          <div>
+          <div className="marg-bottom">
             <span>Songs:</span>
-            <span>none</span>
+            <span>{/** create function that returns formatted song name lists */}</span>
           </div>
+          <Link to={'/home'} className="btn btn-primary">Home</Link>
         </div>
       </div>
     </div>

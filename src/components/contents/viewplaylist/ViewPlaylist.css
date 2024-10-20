@@ -1,17 +1,22 @@
 .r-container {
     background-color: #D9DDDC;
     padding: 6rem;
+    box-sizing: border-box;
 }
 
 .r-header {
-
+    height: 10rem;
+    padding: 2rem;
+    color: #FAF9F8;
 }
 
 .r-description {
     font-size: larger;
-    background-color: white;
+    background-color: #FAF9F8;
+    height: 80%;
 }
 
-.r-description div {
-    margin-bottom: 2rem;
+.marg-bottom {
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
