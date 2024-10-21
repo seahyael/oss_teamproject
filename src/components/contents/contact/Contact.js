@@ -12,12 +12,10 @@ function contact() {
       <div className="contact-item">
         <img src={profile2} className="header-logo" alt="권세아 프로필" />
         <h4>권세아</h4>
-        <h4>010.5916.7180</h4>
       </div>
       <div className="contact-item">
         <img src={profile1} className="header-logo" alt="금강산 프로필" />
         <h4>금강산</h4>
-        <h4>010-2118-3393</h4>
       </div>
     </div>
   );
