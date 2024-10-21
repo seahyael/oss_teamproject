@@ -11,7 +11,7 @@
 
     grid-gap: 10px;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     margin: 1px;
 
@@ -21,7 +21,7 @@
 }
 
 .item {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 18rem;
 }
 

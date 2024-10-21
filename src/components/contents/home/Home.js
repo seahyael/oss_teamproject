@@ -53,11 +53,18 @@ function PlaylistCard() {
           ></div>
           <div className="card-body">
             <h5 className="card-title">{playlist.title}</h5>
-            {playlist.description.length < 65 ? <p className="card-text">{playlist.description}</p>: <p>{playlist.description.substr(0, 65)}...</p>}
+            {playlist.description.length < 65 ? (
+              <p className="card-text">{playlist.description}</p>
+            ) : (
+              <p>{playlist.description.substr(0, 65)}...</p>
+            )}
             {/* <p className="card-text">{playlist.description}</p> */}
-            <a href={playlist.url} className="btn btn-primary">
+            {/* <a href={playlist.url} className="btn btn-primary">
               View Playlist
-            </a>
+            </a> */}
+            <Link className="btn btn-primary" to="/read" state={{data:playlist}}>
+              View Playlist
+            </Link>
           </div>
         </div>
       ))}
